@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 align="center">会员注册</h1>
+    <form action="" method="post">
+    <table cellspacing="1px" cellpadding="10px" bgcolor="black" align="center">
+        <tr  bgcolor="white">
+            <th align="right">用户名：</th>
+            <td><input type="text" placeholder="请输入用户名">
+            <p>用户必须是字母开头，后面字母或数字，不能大于15位</p>
+            </td>
+        </tr>
+        <tr  bgcolor="white">
+            <th align="right">密码:</th>
+            <td><input type="password" placeholder="请输入密码">
+            <p>密码必须大于6位数</p>
+            </td>
+        </tr>
+        <tr  bgcolor="white">
+            <th align="right">确认密码:</th>
+            <td><input type="password" placeholder="请输入确认密码">
+            <p>密码必须大于6位数</p>
+            </td>
+        </tr>
+        <tr bgcolor="white">
+            <th align="right">邮箱:</th>
+            <td><input type="email" placeholder="请输入邮箱">
+            <p>请输入邮箱名</p>
+            </td>
+        </tr>
+         <tr bgcolor="white">
+             <th>性别:</th>
+             <td><label ><input type="radio" name="gender">男</label>
+                 <label ><input type="radio" name="gender">女</label>
+            </td>     
+         </tr>
+         <tr bgcolor="white">
+            <th>爱好:</th>
+            <td><label ><input type="checkbox" name="hobby">画画</label>
+                <label ><input type="checkbox" name="hobby">阅读</label>
+                <label ><input type="checkbox" name="hobby" checked>打球</label>
+                <label ><input type="checkbox" name="hobby">游泳</label>
+                <label ><input type="checkbox" name="hobby">健身</label>
+           </td>     
+        </tr> 
+        <tr bgcolor="white">
+            <th>技能:</th>
+            <td>
+                <select multiple>
+                    <option value="1">弹琴</option>
+                    <option value="2">滑冰</option>
+                    <option value="3">骑摩托</option>
+                    <option value="4">赛车</option>
+                    <option value="5">写作</option>
+                </select>
+            </td>
+        </tr>
+      <tr bgcolor="white">
+          <th>学历:</th>
+          <td>
+              <select>
+                  <option value="8">博士</option>
+                  <option value="9">硕士</option>
+                  <option value="11">本科</option>
+                  <option value="12">专科</option>
+                  <option value="13">高中</option>
+                  <option value="14">初中</option>
+              </select>
+          </td>
+      </tr>
+      <tr bgcolor="white">
+          <th>头像:</th>
+          <td><input type="file" accept="images/*" multiple></td>
+      </tr>
+      <tr bgcolor="white">
+        <th>生日:</th>
+        <td><input type="date" placeholder="请选择日期"></td>
+    </tr>      
+    <tr bgcolor="white">
+        <th>时间:</th>
+        <td><input type="time" placeholder="请选择时间"></td>
+    </tr>    
+    <tr bgcolor="white">
+        <th>颜色:</th>
+        <td><input type="color"></td>
+    </tr>  
+    <tr bgcolor="white">
+        <th>主页:</th>
+        <td><input type="url"></td>
+    </tr>    
+    <tr bgcolor="white">
+        <th>搜索:</th>
+        <td><input type="search"></td>
+    </tr>      
+    <tr bgcolor="white">
+        <th>电话:</th>
+        <td><input type="tel" placeholder="请输入电话"></td>
+    </tr>    
+    <tr bgcolor="white">
+        <th>范围:</th>
+        <td><input type="range" min="100" max="200" step="10"></td>
+    </tr>     
+    <tr bgcolor="white">
+        <th>金额:</th>
+        <td><input type="number" placeholder="请输入金额"></td>
+    </tr>   
+    <tr bgcolor="white">
+        <th>城市:</th>
+        <td><input type="text" placeholder="请输入城市" list="citys">
+        <datalist id="citys">
+            <option value="北京">beijing</option>
+            <option value="上海">shanghai</option>
+            <option value="哈尔滨">haerbing</option>
+            <option value="广州">guangzhou</option>
+            <option value="南昌">nanchang</option>
+        </datalist>
+        </td>
+    </tr>  
+    <tr bgcolor="white">
+            <th>备注:</th>
+            <td><textarea cols="30" rows="5" placeholder="请输入备注" maxlength="10"></textarea></td>
+    </tr>      
+    <tr bgcolor="white">
+        <th>提交:</th>
+        <td><button type="submit">确认注册</button>
+        <button type="reset">重填</button>
+        </td>
+    </tr>            
+    </table>
+</form>
+</body>
+</html>
