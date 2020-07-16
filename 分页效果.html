@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .box a{
+            display: inline-block;
+            background-color: #F4F4F5;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .box a.disabled{
+            opacity: 0.5;   
+        }
+        .box a.active{
+            background-color: #409EFF;
+            color: white;
+        }
+        .box a:hover{
+            color: blue;
+        }
+        .box.left{
+           text-align: left;
+        }
+        .box.center{
+            text-align: center;
+        }
+        .box.right{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box right">
+        <a class="disabled">&lt;</a>
+        <a class="active">1</a>
+        <a>2</a>
+        <a>3</a>
+        <a>4</a>
+        <a>5</a>
+        <a>6</a>
+        <a>...</a>
+        <a>100</a>
+        <a>&gt;</a>
+    </div>
+</body>
+</html>
